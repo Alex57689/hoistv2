@@ -34,27 +34,27 @@ const Footer: React.FC = () => {
           <h3 className="font-bold mb-2">Explore</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-primary-active">
                 Warranty
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-primary-active">
                 Catalogue
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-primary-active">
                 Products
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
+              <Link href="#" className="hover:text-primary-active">
                 Cylinders
               </Link>
             </li>
             <li>
-              <Link href="/sales" className="hover:text-blue-600">
+              <Link href="/sales-service" className="hover:text-primary-active">
                 Sales &amp; Services
               </Link>
             </li>
@@ -83,7 +83,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-8 text-center text-sm text-gray-600">
         © 2025 Hoist Hydraulics. All rights reserved.
       </div>
