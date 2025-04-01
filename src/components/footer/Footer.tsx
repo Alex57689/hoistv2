@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <h3 className="font-bold mb-2">Explore</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-primary-active">
+              <Link href="warranty" className="hover:text-primary-active">
                 Warranty
               </Link>
             </li>

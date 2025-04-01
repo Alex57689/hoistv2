@@ -9,7 +9,7 @@ const Sales: FC = () => {
 
       <div className="mb-8">
         <Image
-          src="/images/hoist-hydraulics-repair.jpg"
+          src="/images/large-truck.jpg"
           alt="Hoist Hydraulics Repair"
           width={800}
           height={400}
