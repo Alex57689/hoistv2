@@ -6,9 +6,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <section>
-    <Navbar />
-  </section>
   <section >
     <Banner />
   </section>
@@ -86,11 +83,6 @@ export default function Home() {
           </button>
         </div>
       </section>
-
-
-    <section>
-    <Footer/>
-    </section>
     </div>
     </>
   );
