@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image'
+import Branches from '@/components/branches/Branches'
 
 const Sales: FC = () => {
   return (
@@ -34,6 +35,9 @@ const Sales: FC = () => {
           So if you’re after quality, cost-effective, prompt service—you’ve found the right place.
         </p>
       </div>
+      <section className='mt-20'>
+        <Branches/>
+      </section>
     </main>
   )
 }
