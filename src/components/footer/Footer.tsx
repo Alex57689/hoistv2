@@ -4,57 +4,100 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-100 py-10">
-    <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div className="space-y-2">
-        <a href="#" className="hover:text-blue-600">
-          Warranty
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Catalogue
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Products
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Cylinders
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Sales & Services
-        </a>
+      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div className="mb-4">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="50" cy="50" r="50" fill="#333" />
+              <text
+                x="50"
+                y="55"
+                textAnchor="middle"
+                fill="#fff"
+                fontSize="24"
+                fontFamily="Arial"
+                fontWeight="bold"
+              >
+                B
+              </text>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="font-bold mb-2">Explore</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Warranty
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Catalogue
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Cylinders
+              </Link>
+            </li>
+            <li>
+              <Link href="/sales" className="hover:text-blue-600">
+                Sales &amp; Services
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-bold mb-2">Resources</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Australian Trucking Association
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Australasian Transport News
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Department of Land Transport
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                Department of Transport and Regional Services
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-blue-600">
+                NSW Department of Transport
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="space-y-2">
-        <span className="font-bold">Links & Resources</span>
-        <a href="#" className="hover:text-blue-600">
-          Company
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Resources
-        </a>
+
+      {/* Copyright */}
+      <div className="mt-8 text-center text-sm text-gray-600">
+        © 2025 Hoist Hydraulics. All rights reserved.
       </div>
-      <div className="space-y-2">
-        <a href="#" className="hover:text-blue-600">
-          Australian Trucking Association
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Australasian Transport News
-        </a>
-      </div>
-      <div className="space-y-2">
-        <a href="#" className="hover:text-blue-600">
-          Department of Land Transport
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          Department of Transport and Regional Services
-        </a>
-        <a href="#" className="hover:text-blue-600">
-          NSW Department of Transport
-        </a>
-      </div>
-    </div>
-    <div className="mt-8 text-center text-sm text-gray-600">
-      © 2025 Hoist Hydraulics. All rights reserved.
-    </div>
-  </footer>
+    </footer>
   );
 };
 
