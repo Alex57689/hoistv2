@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4 shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="bg-primary p-4 shadow-md">
+      <div className="max-w-8xl mx-auto flex items-center justify-between">
+        {/* Notice no <a> around 'Hoist Hydraulics' */}
         <Link href="/" className="text-white text-2xl font-bold">
           Hoist Hydraulics
         </Link>

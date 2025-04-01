@@ -1,47 +1,97 @@
 import Banner from "@/components/banner/Banner";
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar></Navbar>
+    <>
+    <section>
+    <Navbar />
+  </section>
+  <section >
+    <Banner />
+  </section>
+    <div className="min-h-screen flex flex-col bg-white">
 
-      <main>
-        <section>
-          <Banner></Banner>
-        </section>
-        <section className="max-w-1000 mr-10 ml-10">
-          <h2>Welcome to Hoist Hydraulics</h2>
-          <p>
-            Hoist Hydraulics was established in 1970 and is one of the largest
-            suppliers of telescopic cylinders in Australia. Our continual goal
-            is to achieve the very best for our customers by providing high
-            quality products along with prompt reliable service.
-          </p>
-          <p>
-            With over 50 years experience in manufacturing and supply of the
-            industry standard requirement, we have also  manufactured special
-            application cylinders for specific customer requirements; with our
-            customers’ needs and suggestions taken into account at all times,
-            enabling us to offer quality products to cater for real necessities
-            and not just theoretical requirements.  With exports growing,
-            international clients have come to respect the quality of Hoist
-            Hydraulics cylinders.
-          </p>
 
-          <div><button>Read More</button></div>
-        </section>
-        <section className="mr-40 ml-40 flex text-center flex-col">
-        <h2 className="text-6xl my-10">Featured Products</h2>
-        <div className="flex justify-between gap-1">
-          <div><img className="max-w-[300px]" src="img-place.jpg"/> <h3>Hoists</h3></div>
-          <div><img className="max-w-[300px]" src="img-place.jpg"/> <h3>Valves</h3></div>
-          <div><img className="max-w-[300px]" src="img-place.jpg"/> <h3>P.T.O. & Pumps</h3></div>
+      {/* Welcome Section */}
+      <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16">
+        <h2 className="text-3xl font-semibold mb-4 text-left">
+          Welcome to Hoist Hydraulics
+        </h2>
+        <p className="mb-4 text-lg text-gray-700">
+          Hoist Hydraulics was established in 1970 and is one of the largest
+          suppliers of telescopic cylinders in Australia. Our continual goal is
+          to achieve the very best for our customers by providing high quality
+          products along with prompt reliable service.
+        </p>
+        <p className="mb-4 text-lg text-gray-700">
+          With over 40 years experience of supplying hydraulic cylinders and
+          manufacturing special requirements, we are now a leader in the tipper
+          hoist industry. Our customers' needs and suggestions are taken into
+          account at all times, enabling us to offer quality products to cater
+          for real necessities and not just theoretical requirements. With
+          exports growing, international clients have come to respect the
+          quality of Hoist Hydraulics cylinders.
+        </p>
+
+        <div className="text-center mb-8 mt-8">
+          <button className="bg-primary text-white py-2 px-6 rounded-md hover:bg-primary-active">
+            Read More
+          </button>
         </div>
-        </section>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
+      </section>
+
+      {/* Featured Products */}
+      <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16 text-center">
+        <h2 className="text-3xl font-semibold mb-8 text-primary">
+          Featured Products
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="Hoists"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">Hoists</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="Valves"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">Valves</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="P.T.Os"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">P.T.Os</h3>
+          </div>
+        </div>
+        <div className="mt-8">
+          <button className="bg-primary text-white py-3 px-8 rounded hover:bg-primary-active">
+            Explore
+          </button>
+        </div>
+      </section>
+
+
+    <section>
+    <Footer/>
+    </section>
     </div>
+    </>
   );
 }
