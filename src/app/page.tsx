@@ -10,7 +10,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-white">
 
 
-      {/* Welcome Section */}
       <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16">
         <h2 className="text-3xl font-semibold mb-4 text-left">
           Welcome to Hoist Hydraulics
@@ -38,7 +37,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
       <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16 text-center">
         <h2 className="text-3xl font-semibold mb-8 text-primary">
           Featured Products
