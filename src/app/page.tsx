@@ -1,103 +1,85 @@
+import Banner from "@/components/banner/Banner";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+  <section >
+    <Banner />
+  </section>
+    <div className="min-h-screen flex flex-col bg-white">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+      <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16">
+        <h2 className="text-3xl font-semibold mb-4 text-left">
+          Welcome to Hoist Hydraulics
+        </h2>
+        <p className="mb-4 text-lg text-gray-700">
+          Hoist Hydraulics was established in 1970 and is one of the largest
+          suppliers of telescopic cylinders in Australia. Our continual goal is
+          to achieve the very best for our customers by providing high quality
+          products along with prompt reliable service.
+        </p>
+        <p className="mb-4 text-lg text-gray-700">
+          With over 40 years experience of supplying hydraulic cylinders and
+          manufacturing special requirements, we are now a leader in the tipper
+          hoist industry. Our customers' needs and suggestions are taken into
+          account at all times, enabling us to offer quality products to cater
+          for real necessities and not just theoretical requirements. With
+          exports growing, international clients have come to respect the
+          quality of Hoist Hydraulics cylinders.
+        </p>
+
+        <div className="text-center mb-8 mt-8">
+          <button className="bg-primary text-white py-2 px-6 rounded-md hover:bg-primary-active">
+            Read More
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="px-4 md:px-10 max-w-screen-xl mx-auto my-16 text-center">
+        <h2 className="text-3xl font-semibold mb-8 text-primary">
+          Featured Products
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="Hoists"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">Hoists</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="Valves"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">Valves</h3>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image
+              src="/img-place.jpg"
+              alt="P.T.Os"
+              width={300}
+              height={300}
+              layout="intrinsic"
+            />
+            <h3 className="mt-4 text-xl font-medium">P.T.Os</h3>
+          </div>
+        </div>
+        <div className="mt-8">
+          <button className="bg-primary text-white py-3 px-8 rounded hover:bg-primary-active">
+            Explore
+          </button>
+        </div>
+      </section>
     </div>
+    </>
   );
 }
