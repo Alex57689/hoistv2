@@ -62,32 +62,22 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          <h3 className="font-bold mb-2">Resources</h3>
+          <h3 className="font-bold mb-2">Head Office</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="#" className="hover:text-blue-600">
-                Australian Trucking Association
-              </Link>
+              Unit 1 874 Mountain Highway
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
-                Australasian Transport News
-              </Link>
+              Bayswater
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
-                Department of Land Transport
-              </Link>
+             Victoria 3153
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
-                Department of Transport and Regional Services
-              </Link>
+
             </li>
             <li>
-              <Link href="#" className="hover:text-blue-600">
-                NSW Department of Transport
-              </Link>
+              ABN 49 951 177 618
             </li>
           </ul>
         </div>
