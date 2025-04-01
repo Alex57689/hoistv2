@@ -44,7 +44,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
           <div className="flex flex-col items-center">
             <Image
-              src="images/img-place.jpg"
+              src="/images/img-place.jpg"
               alt="Hoists"
               width={300}
               height={300}
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="images/img-place.jpg"
+              src="/images/img-place.jpg"
               alt="Valves"
               width={300}
               height={300}
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="images/img-place.jpg"
+              src="/images/img-place.jpg"
               alt="P.T.Os"
               width={300}
               height={300}

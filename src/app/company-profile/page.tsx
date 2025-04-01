@@ -8,7 +8,7 @@ const Company: FC = () => {
 
       <div className="mb-8">
         <Image
-          src="/mining-truck.jpg" 
+          src="/images/mining-truck.jpg" 
           alt="Hoist Hydraulics Building"
           width={800}
           height={400}
