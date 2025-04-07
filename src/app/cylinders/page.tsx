@@ -52,13 +52,6 @@ const Cylinders: FC = () => {
               <li>Multi-Stage &amp; Single-Stage Cylinders</li>
             </ul>
           </div>
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Marine</h3>
-            <ul className="list-disc list-inside">
-              <li>Marina Gates</li>
-              <li>Wharf Cranes</li>
-            </ul>
-          </div>
         </div>
         <p className="mt-8 text-center text-xl">
           Our commitment to quality and unparalleled support has established us as a global leader in hydraulic cylinder solutions.
@@ -68,7 +61,7 @@ const Cylinders: FC = () => {
     </section>
 
     <section>
-        <CylinderCarousel></CylinderCarousel>
+        <CylinderCarousel/>
     </section>
     </main>
   )

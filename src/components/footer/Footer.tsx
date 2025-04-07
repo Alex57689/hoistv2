@@ -39,17 +39,17 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-primary-active">
+              <Link href="catalogue" className="hover:text-primary-active">
                 Catalogue
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-primary-active">
+              <Link href="ourrange" className="hover:text-primary-active">
                 Products
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-primary-active">
+              <Link href="cylinders" className="hover:text-primary-active">
                 Cylinders
               </Link>
             </li>
