@@ -1,14 +1,16 @@
-import { FC } from 'react'
-import Image from 'next/image'
-
+import { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
 const Company: FC = () => {
   return (
     <main className="max-w-5xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Commitment to the Industry</h1>
+      <h1 className="text-3xl text-primary font-bold mb-6">
+        Commitment to the Industry
+      </h1>
 
       <div className="mb-8">
         <Image
-          src="/images/mining-truck.jpg" 
+          src="/images/mining-truck.jpg"
           alt="Hoist Hydraulics Building"
           width={800}
           height={400}
@@ -18,24 +20,80 @@ const Company: FC = () => {
 
       <div className="space-y-4 leading-relaxed">
         <p>
-          <strong>Hoist Hydraulics</strong> was established in 1970 and is one of the largest 
-          suppliers of telescopic cylinders in Australia. Our continual goal is to achieve 
-          the very best for our customers by providing high quality products along with 
-          prompt reliable service.
+          <strong>Hoist Hydraulics</strong> was established in{" "}
+          <strong>1970</strong> and is one of the largest suppliers of
+          telescopic cylinders in Australia. With over 50 years of experience,
+          we have become a leader in the hydraulics industry, serving sectors
+          such as mining, earthmoving, agriculture, and waste management. Our
+          continual goal is to provide high-quality products and prompt,
+          reliable service.
         </p>
+
         <p>
-          With over 40 years experience of supplying hydraulic cylinders, we are now a leader 
-          in the tipper hoist industry. Our customers’ needs and suggestions are taken into 
-          account at all times, enabling us to offer high quality products to cater for 
-          real necessities and not just recommendations.
+          With exports growing, international clients have come to respect the
+          quality of Hoist Hydraulics cylinders. Our customers’ needs and
+          suggestions are taken into account at all times, enabling us to offer
+          practical, high-performing solutions.
         </p>
+
+        <h2 className="text-2xl font-semibold mt-8 text-primary">
+          Our Product Range
+        </h2>
+
         <p>
-          With exports growing, international clients have come to respect the quality of 
-          Hoist Hydraulics cylinders.
+          <strong className="text-secondary">Cylinders:</strong>
+          <br />
+          “Wombat” Bottom Lift Hoist (5–24T), “Emu” Undersbody Hoist (2–13T),
+          “Goanna” Top Lift Low Friction Hoist (3–60T), and “Koala” Top Lift
+          Convertible (up to 60T).
         </p>
+
+        <p>
+          <strong className="text-secondary">Hydraulic Components:</strong>
+          <br />
+          We offer a variety of pumps, valves, fittings, and power take-offs
+          (PTOs) designed to enhance vehicle and machinery performance.
+        </p>
+
+        <p>
+          <strong className="text-secondary">Pneumatic Accessories:</strong>
+          <br />
+          Items such as air cab controls, control valves, oil tanks, and
+          toolboxes to support hydraulic systems.
+        </p>
+
+        <p>
+          All products come with a 12-month warranty, and we actively use
+          customer feedback to continually improve our offerings.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-8 text-primary">
+          Our Locations
+        </h2>
+
+        <p>
+          Hoist Hydraulics has multiple branches located across Australia. Each
+          branch is equipped with knowledgeable staff who are ready to assist
+          with any sales inquiries, provide expert advice, and offer tailored
+          solutions. Whether you require product selection guidance, custom
+          hydraulic systems, or maintenance and upgrade support, our experienced
+          team is here to help.
+        </p>
+
+        <ul className="list-disc list-inside mt-4">
+          <li className="text-secondary font-semibold hover:underline cursor-pointer">
+            <Link href="/sales-service#victoria">Hoist Hydraulics Victoria (Head Office)</Link>
+          </li>
+          <li className="text-secondary font-semibold hover:underline cursor-pointer">
+            <Link href="/sales-service#southaustralia">Hoist Hydraulics South Australia</Link>
+          </li>
+          <li className="text-secondary font-semibold hover:underline cursor-pointer">
+            <Link href="/sales-service#queensland">Hoist Hydraulics Queensland</Link>
+          </li>
+        </ul>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Company
+export default Company;
