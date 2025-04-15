@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-primary p-4 shadow-md">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
-        <Link href="/" className="text-white text-2xl font-bold">
-          Hoist Hydraulics
-        </Link>
+        <Image src='/images/hoist-logo.svg' width={50} height={50} alt='logo hoist hydraulics'/>
 
         <button
           className="text-white md:hidden"

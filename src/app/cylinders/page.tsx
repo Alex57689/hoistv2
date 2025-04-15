@@ -4,7 +4,6 @@ import { FC } from "react";
 const Cylinders: FC = () => {
   return (
     <main>
-      {/* Full-width background section OUTSIDE the constrained <main> */}
       <section className="bg-gray-100 py-16 w-full">
         <div className="max-w-6xl mx-auto px-4 text-gray-800">
           <h2 className="text-4xl font-semibold text-center text-primary mb-6">
@@ -65,7 +64,7 @@ const Cylinders: FC = () => {
           <h2 className="text-4xl font-semibold mb-8 text-primary text-center">Hydraulic Cylinders</h2>
 
           <FeatureSection
-            pdfUrl="/pdfs/gorilla.pdf"
+            pdfUrl="/pdfs/gc-brochure.pdf"
             title={`"Gorilla" Well Mount Hoists`}
             imageSrc="/images/valve.jpg"
             altText="Gorilla Well Mount Hoists"
@@ -81,6 +80,7 @@ const Cylinders: FC = () => {
           />
 
           <FeatureSection
+            pdfUrl="/pdfs/emu-brochure.pdf"
             title={`"Emu" Underbody Hoists`}
             imageSrc="/images/valve.jpg"
             altText="Emu Underbody Hoists"
