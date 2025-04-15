@@ -27,7 +27,7 @@ const Branches: React.FC = () => {
         <div className="flex-1 w-full md:w-auto h-32 md:h-64">
           <iframe
             title="874 Mountain Highway, Bayswater, Victoria"
-            src="https://www.google.com/maps?q=874+Mountain+Highway,+Bayswater,+Victoria&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.918113775729!2d145.27674597498847!3d-37.83880283546803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63b605c5606b9%3A0x1b634fc3d3a478a1!2sHoist%20Hydraulics%20VIC%20PTY%20Ltd!5e0!3m2!1sen!2sus!4v1744697196398!5m2!1sen!2sus"
             className="w-full h-full border-0 shadow-xl"
             loading="lazy"
           ></iframe>
@@ -57,7 +57,7 @@ const Branches: React.FC = () => {
         <div className="flex-1 w-full md:w-auto h-32 md:h-64">
           <iframe
             title="Corner Cross Keys Road & CB Fisher Drive, Cavan, SA, 5094"
-            src="https://www.google.com/maps?q=Corner+Cross+Keys+Road+%26+CB+Fisher+Drive,+Cavan,+SA,+5094&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.362620470059!2d138.59886977380677!3d-34.82197420909335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0b64ea1fa85cb%3A0x4b2ca10564949c77!2sHoist%20Hydraulics%20SA%20PTY%20Ltd!5e0!3m2!1sen!2sus!4v1744697146396!5m2!1sen!2sus"
             className="w-full h-full border-0 shadow-xl"
             loading="lazy"
           ></iframe>
@@ -87,7 +87,7 @@ const Branches: React.FC = () => {
         <div className="flex-1 w-full md:w-auto h-32 md:h-64">
           <iframe
             title="12 Blivest Street, Oxley, Queensland, 4075"
-            src="https://www.google.com/maps?q=12+Blivest+Street,+Oxley,+Queensland,+4075&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.8979831184906!2d152.96969307440003!3d-27.56567642080049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914fb412ec3f0b%3A0x1623d0201caa933f!2sHoist%20Hydraulics%20QLD%20PTY%20Ltd.!5e0!3m2!1sen!2sau!4v1744696996597!5m2!1sen!2sau"
             className="w-full h-full border-0 shadow-xl"
             loading="lazy"
           ></iframe>
