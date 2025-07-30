@@ -42,7 +42,7 @@ export default function Home() {
           <Carousel />
         </section>
 
-        <section className="h-100">
+        <section className="h-20">
 
         </section>
       </div>
