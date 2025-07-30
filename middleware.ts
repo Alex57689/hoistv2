@@ -1,7 +1,8 @@
-// middleware.js (in your root directory)
+// middleware.tsx
 import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export function middleware(request: { nextUrl: { pathname: string } }) {
+export function middleware(request: NextRequest) {
   // Disable specific routes in production
   if (process.env.NODE_ENV === 'production') {
     const restrictedPaths = ['/ourrange', '/cylinders']
