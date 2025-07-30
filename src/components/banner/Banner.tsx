@@ -10,9 +10,7 @@ const Banner: React.FC = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-white">
           Explore Our Range
         </h2>
-        <button className="mt-5 px-6 py-3 text-base sm:text-lg bg-primary hover:bg-primary-active text-white rounded-lg transition duration-200">
-          Explore
-        </button>
+
       </div>
     </div>
   );

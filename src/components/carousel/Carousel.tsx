@@ -49,11 +49,13 @@ const Carousel: React.FC = () => {
         </div>
         </Link>
       </div>
+      {/* 
       <div className="mt-8">
         <button className="bg-primary text-white py-3 px-8 rounded hover:bg-primary-active">
          <Link href='/ourrange'>Explore Products</Link> 
         </button>
       </div>
+      */}
     </section>
   );
 };

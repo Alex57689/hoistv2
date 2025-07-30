@@ -7,26 +7,6 @@ const Footer: React.FC = () => {
       <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="mb-4">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="50" cy="50" r="50" fill="#333" />
-              <text
-                x="50"
-                y="55"
-                textAnchor="middle"
-                fill="#fff"
-                fontSize="24"
-                fontFamily="Arial"
-                fontWeight="bold"
-              >
-                B
-              </text>
-            </svg>
           </div>
         </div>
 
