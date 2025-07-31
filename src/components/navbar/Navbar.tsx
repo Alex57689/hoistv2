@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-primary p-4 shadow-md">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
-        <Image src='/images/hoist-logo.svg' width={50} height={50} alt='logo hoist hydraulics'/>
+        <Image src='/images/hoistlogo.png' width={50} height={50} alt='logo hoist hydraulics'/>
 
         <button
           className="text-white md:hidden"
@@ -50,9 +50,10 @@ const Navbar: React.FC = () => {
           <Link href="/sales-service" className="block text-white hover:text-gray-300">
             Sales & Service
           </Link>
-          <Link href="/ourrange" className="block text-white hover:text-gray-300">
+          {/*          <Link href="/ourrange" className="block text-white hover:text-gray-300">
             Our Range
-          </Link>
+          </Link>*/ }
+
           <Link href="/contact" className="block text-white hover:text-gray-300">
             Contact
           </Link>

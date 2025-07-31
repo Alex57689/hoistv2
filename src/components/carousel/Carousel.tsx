@@ -13,7 +13,7 @@ const Carousel: React.FC = () => {
         <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
           <Image
             className="shadow-xl"
-            src="/images/hoist.jpg"
+            src="/images/gc.jpg"
             alt="Hoists"
             width={400}
             height={400}
