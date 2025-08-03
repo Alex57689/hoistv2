@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import { FC, FormEvent, useState } from 'react'
 
 const ContactPage: FC = () => {
@@ -7,10 +6,14 @@ const ContactPage: FC = () => {
     name: '',
     email: '',
     phone: '',
-    addressState: '',
+    state: '',
     subject: '',
     message: '',
   })
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [statusMessage, setStatusMessage] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -19,11 +22,43 @@ const ContactPage: FC = () => {
     })
   }
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    // Handle form submission here (e.g., call an API endpoint)
-    console.log('Form Data:', formData)
-    alert('Form submitted! We will get back to you shortly.')
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setStatusMessage('Thank you! Your message has been sent successfully. We will get back to you shortly.')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          state: '',
+          subject: '',
+          message: '',
+        })
+      } else {
+        setSubmitStatus('error')
+        setStatusMessage(result.error || 'Something went wrong. Please try again.')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      setStatusMessage('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -34,24 +69,31 @@ const ContactPage: FC = () => {
 
       <h1 className="text-3xl font-bold mb-6">Contact Hoist Hydraulics Victoria</h1>
 
-      <div className="mb-8">
-
-      </div>
-
-      {/* Intro / Description */}
       <p className="mb-6 leading-relaxed">
         If you have any questions or require any quotations or product info, 
         feel free to contact us using the methods available below. Otherwise, 
         fill in the contact form and we will get back to you as soon as possible.
       </p>
 
-      {/* Contact Information */}
       <div className="mb-8 space-y-1 text-gray-700">
         <p><strong>Address:</strong> 874 Mountain Highway, Bayswater, Victoria</p>
         <p><strong>Phone:</strong> (03) 9728 1888</p>
-        <p><strong>Fax:</strong> (03) (03) 9728 8889</p>
+        <p><strong>Fax:</strong> (03) 9728 8889</p>
         <p><strong>Email:</strong> Sales@hoist.net</p>
       </div>
+
+      {/* Status Messages */}
+      {submitStatus === 'success' && (
+        <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
+          {statusMessage}
+        </div>
+      )}
+      
+      {submitStatus === 'error' && (
+        <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
+          {statusMessage}
+        </div>
+      )}
 
       {/* Contact Form */}
       <form onSubmit={handleSubmit} className="space-y-4 max-w-lg">
@@ -66,7 +108,8 @@ const ContactPage: FC = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
         </div>
 
@@ -81,7 +124,8 @@ const ContactPage: FC = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
         </div>
 
@@ -95,21 +139,23 @@ const ContactPage: FC = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
         </div>
 
         <div>
-          <label htmlFor="addressState" className="block mb-1 font-medium">
-            Address / State
+          <label htmlFor="state" className="block mb-1 font-medium">
+            State
           </label>
           <input
             type="text"
-            id="addressState"
-            name="addressState"
-            value={formData.addressState}
+            id="state"
+            name="state"
+            value={formData.state}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
         </div>
 
@@ -123,7 +169,8 @@ const ContactPage: FC = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
         </div>
 
@@ -137,22 +184,23 @@ const ContactPage: FC = () => {
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+            disabled={isSubmitting}
+            className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
-        </div>
-
-        {/* Placeholder for Google reCAPTCHA (customize or integrate as needed) */}
-        <div className="my-4">
-          <div className="border border-gray-300 p-4 text-center text-gray-500 rounded-md">
-            [ reCAPTCHA placeholder ]
-          </div>
         </div>
 
         <button
           type="submit"
-          className="px-6 py-2 rounded-md bg-primary text-white hover:bg-primary-active focus:outline-none focus:ring-2 focus:ring-blue-600"
+          disabled={isSubmitting}
+          className="px-6 py-2 rounded-md bg-primary text-white hover:bg-primary-active focus:outline-none focus:ring- disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
         >
-          Send
+          {isSubmitting && (
+            <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          )}
+          {isSubmitting ? 'Sending...' : 'Send'}
         </button>
       </form>
     </main>
