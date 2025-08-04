@@ -43,9 +43,8 @@ const Company: FC = () => {
         <p>
           <strong className="text-secondary">Cylinders:</strong>
           <br />
-          “Wombat” Bottom Lift Hoist (5–24T), “Emu” Undersbody Hoist (2–13T),
-          “Goanna” Top Lift Low Friction Hoist (3–60T), and “Koala” Top Lift
-          Convertible (up to 60T).
+          "Gorilla“ GC Cylinders (26-70T ), "Double Acting" D/A Cylinders, "Wombat” Bottom Lift Hoist (5–24T), “Emu” Undersbody Hoist (2–13T),
+          “Goanna” Top Lift Low Friction Hoist (3–60T).
         </p>
 
         <p>
@@ -58,8 +57,7 @@ const Company: FC = () => {
         <p>
           <strong className="text-secondary">Pneumatic Accessories:</strong>
           <br />
-          Items such as air cab controls, control valves, oil tanks, and
-          toolboxes to support hydraulic systems.
+          Items such as air cab controls and control valves to support hydraulic systems.
         </p>
 
         <p>

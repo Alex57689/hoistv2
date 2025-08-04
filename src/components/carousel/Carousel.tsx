@@ -9,7 +9,7 @@ const Carousel: React.FC = () => {
         Featured Products
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center ">
-        <Link href='/#'>
+        <Link href=''>
         <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
           <Image
             className="shadow-xl"
@@ -22,7 +22,7 @@ const Carousel: React.FC = () => {
           <h3 className="mt-4 text-2xl font-bold text-primary">Hoists</h3>
         </div>
         </Link>
-        <Link href='/#'>
+        <Link href=''>
         <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
           <Image
             className="shadow-xl"
@@ -35,7 +35,7 @@ const Carousel: React.FC = () => {
           <h3 className="mt-4 text-2xl font-bold text-primary">Valves</h3>
         </div>
         </Link>
-        <Link href='/#'>
+        <Link href=''>
         <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
           <Image
             className="shadow-xl"
