@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
           <h3 className="font-bold mb-2">Head Office</h3>
           <ul className="space-y-2">
             <li>
-              Unit 1 874 Mountain Highway
+              874 Mountain Highway
             </li>
             <li>
               Bayswater

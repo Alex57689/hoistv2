@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Carousel: React.FC = () => {
@@ -9,8 +8,7 @@ const Carousel: React.FC = () => {
         Featured Products
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center ">
-        <Link href=''>
-        <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
+        <div className="flex flex-col items-center  transform transition duration-300">
           <Image
             className="shadow-xl"
             src="/images/gc.jpg"
@@ -21,9 +19,7 @@ const Carousel: React.FC = () => {
           />
           <h3 className="mt-4 text-2xl font-bold text-primary">Hoists</h3>
         </div>
-        </Link>
-        <Link href=''>
-        <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
+        <div className="flex flex-col items-center  transform transition duration-300">
           <Image
             className="shadow-xl"
             src="/images/valve.jpg"
@@ -34,9 +30,7 @@ const Carousel: React.FC = () => {
           />
           <h3 className="mt-4 text-2xl font-bold text-primary">Valves</h3>
         </div>
-        </Link>
-        <Link href=''>
-        <div className="flex flex-col items-center  transform transition duration-300 hover:scale-105">
+        <div className="flex flex-col items-center  transform transition duration-300 ">
           <Image
             className="shadow-xl"
             src="/images/ptopump.jpg"
@@ -47,7 +41,6 @@ const Carousel: React.FC = () => {
           />
           <h3 className="mt-4 text-2xl font-bold text-primary">P.T.O. Pumps</h3>
         </div>
-        </Link>
       </div>
       {/* 
       <div className="mt-8">

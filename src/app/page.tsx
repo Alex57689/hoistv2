@@ -1,6 +1,5 @@
 import Banner from "@/components/banner/Banner";
 import Carousel from "@/components/carousel/Carousel";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {

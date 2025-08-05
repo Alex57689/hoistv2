@@ -43,8 +43,8 @@ const Company: FC = () => {
         <p>
           <strong className="text-secondary">Cylinders:</strong>
           <br />
-          "Gorilla“ GC Cylinders (26-70T ), "Double Acting" D/A Cylinders, "Wombat” Bottom Lift Hoist (5–24T), “Emu” Undersbody Hoist (2–13T),
-          “Goanna” Top Lift Low Friction Hoist (3–60T).
+            "Gorilla“ GC Cylinders (26-70T), "Double-Acting" D/A Cylinders, "Wombat” Bottom Lift Hoists (5–24T),
+            “Emu” Underbody Hoists (2–13T), “Goanna” Top Lift Low Friction Hoists (3–60T).
         </p>
 
         <p>
@@ -80,13 +80,13 @@ const Company: FC = () => {
 
         <ul className="list-disc list-inside mt-4">
           <li className="text-secondary font-semibold hover:underline cursor-pointer">
-            <Link href="/sales-service#victoria">Hoist Hydraulics Victoria (Head Office)</Link>
+            <Link href="/sales-service#victoria">Hoist Hydraulics Melbourne (Head Office)</Link>
           </li>
           <li className="text-secondary font-semibold hover:underline cursor-pointer">
-            <Link href="/sales-service#southaustralia">Hoist Hydraulics South Australia</Link>
+            <Link href="/sales-service#queensland">Hoist Hydraulics Brisbane</Link>
           </li>
           <li className="text-secondary font-semibold hover:underline cursor-pointer">
-            <Link href="/sales-service#queensland">Hoist Hydraulics Queensland</Link>
+            <Link href="/sales-service#southaustralia">Hoist Hydraulics Adelaide</Link>
           </li>
         </ul>
       </div>
