@@ -33,7 +33,7 @@ const Carousel: React.FC = () => {
         <div className="flex flex-col items-center  transform transition duration-300 ">
           <Image
             className="shadow-xl"
-            src="/images/ptopump.jpg"
+            src="/images/pto.jpg"
             alt="P.T.Os"
             width={400}
             height={400}
