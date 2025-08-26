@@ -82,7 +82,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             pdfUrl="/pdfs/emu-brochure.pdf"
             title={`"Emu" Underbody Hoists`}
-            imageSrc="/images/emu.jpg"
+            imageSrc="/images/Emu.jpg"
             altText="Emu Underbody Hoists"
             features={[
               "Hardened Chrome Stages",
