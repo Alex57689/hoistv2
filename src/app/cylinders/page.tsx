@@ -55,7 +55,7 @@ const Cylinders: FC = () => {
             Our commitment to quality and unparalleled support has established us as a
             global leader in hydraulic cylinder solutions. If you require a custom
             cylinder that isn't listed here, it only means we haven't been asked to
-            build it yet—and we're ready to rise to the challenge.
+            build it yet and we're ready to rise to the challenge.
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             pdfUrl="/pdfs/gc-brochure.pdf"
             title={`"Gorilla" Well Mount Hoists`}
-            imageSrc="/images/valve.jpg"
+            imageSrc="/images/gc.jpg"
             altText="Gorilla Well Mount Hoists"
             features={[
               "Lower closed height",
@@ -82,7 +82,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             pdfUrl="/pdfs/emu-brochure.pdf"
             title={`"Emu" Underbody Hoists`}
-            imageSrc="/images/valve.jpg"
+            imageSrc="/images/emu.jpg"
             altText="Emu Underbody Hoists"
             features={[
               "Hardened Chrome Stages",
@@ -92,9 +92,10 @@ const Cylinders: FC = () => {
             ]}
             reverse
           />
-
+{/*
           <FeatureSection
             title={`"Wombat" Front Mount Hoists`}
+            pdfUrl="/pdfs/wombat-brochure.pdf"
             imageSrc="/images/valve.jpg"
             altText="Wombat Front Mount Hoists"
             features={[
@@ -106,6 +107,18 @@ const Cylinders: FC = () => {
               "High tensile bronze top and bottom guides",
               "Superior design eliminates special tools for servicing",
               "High tensile hydraulic tubing",
+            ]}
+          />*/}
+                    <FeatureSection
+            title={`"D/A" Double Acting Cylinders`}
+            pdfUrl="/pdfs/da-brochure.pdf"
+            imageSrc="/images/da.jpg"
+            altText="D/A Double Acting Cylinder"
+            features={[
+              "Hardened Chrome Stages",
+              "2000 psi rating (140 Bar) operating pressure",
+              "Positive sealing at high and low pressures",
+              "Simple design eliminates special tools allowing ease of maintenance",
             ]}
           />
         </div>
