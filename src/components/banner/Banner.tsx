@@ -11,9 +11,10 @@ const Banner: React.FC = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-white">
           Explore Our Range
         </h2>
-            <button className="mt-5 bg-primary text-white py-2 px-6 rounded-md hover:bg-primary-active">
-              <Link href="/cylinders"> Our Range</Link>
-            </button>
+<button className="mt-5 bg-primary text-white py-4 px-8 text-lg rounded-md hover:bg-primary-active">
+  <Link href="/cylinders">Our Range</Link>
+</button>
+
 
       </div>
     </div>

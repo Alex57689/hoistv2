@@ -64,7 +64,7 @@ const Cylinders: FC = () => {
           <h2 className="text-4xl font-semibold mb-8 text-primary text-center">Hydraulic Cylinders</h2>
 
           <FeatureSection
-            pdfUrl="/pdfs/gc-brochure.pdf"
+            pdfUrl="\pdfs\Hoist Hydraulics Gorilla GC Hoist Brochure.pdf"
             title={`"Gorilla" Well Mount Hoists`}
             imageSrc="/images/gc.jpg"
             altText="Gorilla Well Mount Hoists"
@@ -78,25 +78,10 @@ const Cylinders: FC = () => {
               "Simple design eliminates special tools allowing ease of maintenance",
             ]}
           />
-
-          <FeatureSection
-            pdfUrl="/pdfs/emu-brochure.pdf"
-            title={`"Emu" Underbody Hoists`}
-            imageSrc="/images/Emu.jpg"
-            altText="Emu Underbody Hoists"
-            features={[
-              "Hardened Chrome Stages",
-              "2000 psi rating (140 Bar) operating pressure",
-              "Positive sealing at high and low pressures",
-              "Simple design eliminates special tools allowing ease of maintenance",
-            ]}
-            reverse
-          />
-{/*
           <FeatureSection
             title={`"Wombat" Front Mount Hoists`}
-            pdfUrl="/pdfs/wombat-brochure.pdf"
-            imageSrc="/images/valve.jpg"
+            pdfUrl="pdfs\Hoist Hydraulics Wombat BLT Front Mount Hoist Brochure.pdf"
+            imageSrc="/images/blt.jpg"
             altText="Wombat Front Mount Hoists"
             features={[
               "More thrust per stage Large thrust diameters",
@@ -108,10 +93,42 @@ const Cylinders: FC = () => {
               "Superior design eliminates special tools for servicing",
               "High tensile hydraulic tubing",
             ]}
-          />*/}
+            reverse
+          />
+                    <FeatureSection
+            title={`"Wombat" Front Mount Hoists W/Tank`}
+            pdfUrl="\pdfs\Hoist Hydraulics Wombat BL Front Mount Hoist Brochure.pdf"
+            imageSrc="/images/bl.jpg"
+            altText="Wombat Front Mount Hoists"
+            features={[
+              "More thrust per stage Large thrust diameters",
+              "2000 psi rating (13.8 mpa) operating pressure",
+              "Sealing surfaces precision honed",
+              "Permanent pre-loaded seals",
+              "Positive sealing at high and low pressures",
+              "High tensile bronze top and bottom guides",
+              "Superior design eliminates special tools for servicing",
+              "High tensile hydraulic tubing",
+            ]}
+            
+          />
+          <FeatureSection
+            pdfUrl="pdfs\Hoist Hydraulics Emu Underbody Hoist Brochure.pdf"
+            title={`"Emu" Underbody Hoists`}
+            imageSrc="/images/Emu.jpg"
+            altText="Emu Underbody Hoists"
+            features={[
+              "Hardened Chrome Stages",
+              "2000 psi rating (140 Bar) operating pressure",
+              "Positive sealing at high and low pressures",
+              "Simple design eliminates special tools allowing ease of maintenance",
+            ]}
+            reverse
+          />
+
                     <FeatureSection
             title={`"D/A" Double Acting Cylinders`}
-            pdfUrl="/pdfs/da-brochure.pdf"
+            pdfUrl="pdfs\Hoist Hydraulics DA Double Acting Ram Brochure.pdf"
             imageSrc="/images/da.jpg"
             altText="D/A Double Acting Cylinder"
             features={[
