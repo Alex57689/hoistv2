@@ -24,6 +24,7 @@ const Footer: React.FC = () => {
                 Catalogue
               </Link>
             </li>
+            */}
             <li>
               <Link href="ourrange" className="hover:text-primary-active">
                 Products
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
                 Cylinders
               </Link>
             </li>
-            */}
+            
             <li>
               <Link href="/sales-service" className="hover:text-primary-active">
                 Sales &amp; Services

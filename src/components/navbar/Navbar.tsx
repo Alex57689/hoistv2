@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
     <nav className="bg-primary p-4 shadow-md">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
         <Image src='/images/hoistlogo.png' width={50} height={50} alt='logo hoist hydraulics'/>
-
         <button
           className="text-white md:hidden"
           onClick={() => setIsOpen(!isOpen)}
@@ -30,8 +29,8 @@ const Navbar: React.FC = () => {
           <Link href="/sales-service" className="text-white hover:text-gray-300">
             Sales & Service
           </Link>
-          <Link href="/cylinders" className="text-white hover:text-gray-300">
-            Cylinders
+          <Link href="/ourrange" className="text-white hover:text-gray-300">
+            Our Range
           </Link>
           <Link href="/contact" className="text-white hover:text-gray-300">
             Contact

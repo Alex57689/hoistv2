@@ -66,6 +66,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             pdfUrl="\pdfs\Hoist Hydraulics Gorilla GC Hoist Brochure.pdf"
             title={`"Gorilla" Well Mount Hoists`}
+            id='gc'
             imageSrc="/images/gc.jpg"
             altText="Gorilla Well Mount Hoists"
             features={[
@@ -81,6 +82,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             title={`"Wombat" Front Mount Hoists`}
             pdfUrl="pdfs\Hoist Hydraulics Wombat BLT Front Mount Hoist Brochure.pdf"
+            id='wombat'
             imageSrc="/images/blt.jpg"
             altText="Wombat Front Mount Hoists"
             features={[
@@ -115,6 +117,7 @@ const Cylinders: FC = () => {
           <FeatureSection
             pdfUrl="pdfs\Hoist Hydraulics Emu Underbody Hoist Brochure.pdf"
             title={`"Emu" Underbody Hoists`}
+            id='emu'
             imageSrc="/images/Emu.jpg"
             altText="Emu Underbody Hoists"
             features={[
@@ -128,6 +131,7 @@ const Cylinders: FC = () => {
 
                     <FeatureSection
             title={`"D/A" Double Acting Cylinders`}
+            id='da'
             pdfUrl="pdfs\Hoist Hydraulics DA Double Acting Ram Brochure.pdf"
             imageSrc="/images/da.jpg"
             altText="D/A Double Acting Cylinder"

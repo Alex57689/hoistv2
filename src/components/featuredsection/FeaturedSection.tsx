@@ -9,6 +9,8 @@ interface SectionProps {
   features: string[];
   pdfUrl?: string;
   reverse?: boolean;
+  id?:string;
+
 }
 
 const FeatureSection: FC<SectionProps> = ({
@@ -17,9 +19,10 @@ const FeatureSection: FC<SectionProps> = ({
   altText,
   features,
   pdfUrl,
+  id,
   reverse,
 }) => (
-  <section className="py-10">
+  <section id={id} className="py-10">
     <div
       className={`flex flex-col md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""

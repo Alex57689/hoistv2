@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Carousel: React.FC = () => {
@@ -42,13 +43,13 @@ const Carousel: React.FC = () => {
           <h3 className="mt-4 text-2xl font-bold text-primary">P.T.O. Pumps</h3>
         </div>
       </div>
-      {/* 
+      
       <div className="mt-8">
         <button className="bg-primary text-white py-3 px-8 rounded hover:bg-primary-active">
          <Link href='/ourrange'>Explore Products</Link> 
         </button>
       </div>
-      */}
+      
     </section>
   );
 };
